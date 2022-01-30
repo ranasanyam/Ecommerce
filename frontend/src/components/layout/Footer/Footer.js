@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="rightFooter">
                 <h4>Follow Us</h4>
                 <a href="#" >Instagram</a>
-                <a href='#'>Linkdin</a>
+                <a href='#'>LinkedIn</a>
                 <a href="#">Facebook</a>
             </div>
         </footer>
