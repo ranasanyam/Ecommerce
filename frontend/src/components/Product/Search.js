@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import './Search.css';
-import { createBrowserHistory } from 'history';
 import { useNavigate } from "react-router-dom";
 import MetaData from '../layout/MetaData';
 

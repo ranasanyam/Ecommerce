@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/layout/Header/Header.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import WebFont from 'webfontloader';
-import React, { useEffect } from 'react';
+import React from 'react';
 import Footer from './components/layout/Footer/Footer.js';
 import Home from './components/Home/Home';
 import ProductDetails from './components/Product/ProductDetails';
@@ -17,6 +17,12 @@ import UserOptions from './components/layout/Header/UserOptions';
 import { useSelector } from 'react-redux';
 import ProtectedRoute from './components/Route/ProtectedRoute';
 import UpdateProfile from './components/User/UpdateProfile';
+import UpdatePassword from './components/User/UpdatePassword';
+import ForgotPassword from './components/User/ForgotPassword';
+import ResetPassword from './components/User/ResetPassword';
+import Cart from './components/Cart/Cart';
+
+
 function App() {
 
 const { user, isAuthenticated } = useSelector(state => state.user);
@@ -43,6 +49,10 @@ const { user, isAuthenticated } = useSelector(state => state.user);
           <Route exact path="/login" element={<LoginSignUp />} />
           <Route exact path="/account" element={<ProtectedRoute Component={Profile} />} />
           <Route exact path="/me/update" element={<ProtectedRoute Component={UpdateProfile} />} />
+          <Route exact path="/password/update" element={<ProtectedRoute Component={UpdatePassword} />} />
+          <Route exact path="/password/forgot" element={<ForgotPassword />} />
+          <Route exact path="/password/reset/:token" element={<ResetPassword />} />
+          <Route exact path="/cart" element={<Cart />} />
         </Routes>
       <Footer />
     </Router>

@@ -16,7 +16,7 @@ const Profile = () => {
         if(isAuthenticated === false) {
             navigate('/login');
         }
-    },[navigate, isAuthenticated, loading, isAuthenticated]);
+    },[navigate, isAuthenticated, loading]);
     return (
         <Fragment>
             {loading ? <Loader /> : (
