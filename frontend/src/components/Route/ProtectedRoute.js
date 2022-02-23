@@ -26,7 +26,8 @@ const ProtectedRoute = ({ Component }) => {
         </Fragment>
     );
     */
-    return isAuthenticated && !loading ? <Component /> : <Navigate to="/login" replace={true} />
+   return !loading && isAuthenticated ? <Component /> : <Navigate to='/login' replace={true} />
+   
     
 };
 

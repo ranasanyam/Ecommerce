@@ -9,12 +9,13 @@ import ProfilePng from '../../images/Profile.png';
 import { useDispatch, useSelector } from 'react-redux';
 import { clearErrors, login, register } from '../../actions/userAction';
 import { useAlert } from 'react-alert';
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const LoginSignUp = () => {
     const dispatch = useDispatch();
     const alert = useAlert();
     const navigate = useNavigate();
+    const location = useLocation();
     const loginTab = useRef(null);
 
     const registerTab = useRef(null);
@@ -66,15 +67,16 @@ const LoginSignUp = () => {
             setUser({...user, [e.target.name]: e.target.value });
         }
     }
+    const redirect = location.search ? location.search.split("=")[1] : '/account';
     useEffect(() => {
         if(error) {
             alert.error(error);
             dispatch(clearErrors());
         }
         if(isAuthenticated) {
-            navigate('/account');
+            navigate(redirect);
         }
-    },[dispatch, alert, error, isAuthenticated, navigate]);
+    },[dispatch, alert, error, isAuthenticated, navigate, redirect]);
     const switchTabs = (e, tab) => {
         if(tab === "login") {
             switcherTab.current.classList.add("shiftToNeutral");
