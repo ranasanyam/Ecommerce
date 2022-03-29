@@ -30,6 +30,14 @@ import { loadStripe } from '@stripe/stripe-js';
 import OrderSuccess from './components/Cart/OrderSuccess';
 import MyOrders from './components/Order/MyOrders';
 import OrderDetails from './components/Order/OrderDetails';
+import Dashboard from './components/Admin/Dashboard';
+import ProductList from './components/Admin/ProductList';
+import NewProduct from './components/Admin/NewProduct';
+import UpdateProduct from './components/Admin/UdpateProduct';
+import OrderList from './components/Admin/OrderList';
+import ProcessOrder from './components/Admin/ProcessOrder';
+import UsersList from './components/Admin/UsersList';
+import UpdateUser from './components/Admin/UpdateUser';
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -80,7 +88,14 @@ function App() {
           
           <Route exact path="/order/:id" element={<ProtectedRoute Component={OrderDetails} />} />
           <Route exact path="/order/confirm" element={<ProtectedRoute Component={ConfirmOrder} />} />
-          
+          <Route exact path="/admin/dashboard" isAdmin={true} element={<ProtectedRoute Component={Dashboard} />} />
+          <Route exact path="/admin/products" isAdmin={true} element={<ProtectedRoute Component={ProductList} />} />
+          <Route exact path="/admin/product/new" isAdmin={true} element={<ProtectedRoute Component={NewProduct} />} />
+          <Route exact path="/admin/product/:id" isAdmin={true} element={<ProtectedRoute Component={UpdateProduct} />} />
+          <Route exact path="/admin/orders" isAdmin={true} element={<ProtectedRoute Component={OrderList} />} />
+          <Route exact path="/admin/order/:id" isAdmin={true} element={<ProtectedRoute Component={ProcessOrder} />} />
+          <Route exact path="/admin/users"  isAdmin={true} element={<ProtectedRoute Component={UsersList} />} />
+          <Route exact path="/admin/user/:id" isAdmin={true} element={<ProtectedRoute Component={UpdateUser} />} />
         </Routes>
       <Footer />
     </Router>
