@@ -7,6 +7,7 @@
     margin: 2vmax;
     transition: all 0.5s;
     padding-bottom: 0.5vmax;
+    text-align: center;
 }
 .productCard > img {
     width: 14vmax;
@@ -29,7 +30,7 @@
 }
 .productCard > span {
     margin: 0.5vmax;
-    color: tomato;
+    color: #1E90F7;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     font-size: 1vmax;
 }

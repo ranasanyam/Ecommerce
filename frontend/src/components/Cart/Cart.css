@@ -28,7 +28,7 @@
     padding: 5vmax;
 }
 .cartHeader {
-    background-color: tomato;
+    background-color: #1E90F7;
     width: 90%;
     box-sizing: border-box;
     margin: auto;
@@ -89,7 +89,7 @@
     grid-template-columns: 2fr 1.2fr;
 }
 .cartGrossTotalBox {
-    border-top: 3px solid tomato;
+    border-top: 3px solid #1E90F7;
     margin: 1vmax 4vmax;
     box-sizing: border-box;
     justify-content: space-evenly;
@@ -102,7 +102,7 @@
     justify-content: flex-end;
 }
 .checkoutBtn > button {
-    background-color: tomato;
+    background-color: #1E90F7;
     color: white;
     border: none;
     padding: 0.8vmax 4vmax;
@@ -111,6 +111,9 @@
     margin: 1vmax 4vmax;
     cursor: pointer;
     border-radius: 30px;
+}
+.checkoutBtn > button:hover {
+    background-color: rgb(25, 90, 200);
 }
 @media screen and (max-width: 600px) {
     .cartPage {

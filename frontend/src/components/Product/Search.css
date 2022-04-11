@@ -26,7 +26,7 @@
 .searchBox > input[type="submit"] {
     height: 8%;
     border-radius: 0%;
-    background-color: tomato;
+    background-color: #1E90F7;
     border: none;
     padding: 1vmax;
     width: 10%;
@@ -36,5 +36,5 @@
     transition: all 0.5s;
 }
 .searchBox > input[type="submit"]:hover {
-    background-color: rgb(55, 97, 214);
+    background-color: rgb(25, 80, 180);
 }

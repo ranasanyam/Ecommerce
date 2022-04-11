@@ -18,7 +18,7 @@
     color: rgba(0, 0, 0, 0.664);
     font: 400 1.3vmax "Roboto";
     padding: 1.3vmax;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(25, 90, 200, 1);
     width: 50%;
     margin: auto;
 }
@@ -52,11 +52,11 @@
     position: absolute;
     transform: translateX(1vmax);
     font-size: 1.6vmax;
-    color: rgba(0, 0, 0, 0.623);
+    color: #1E90F7;
 }
 .shippingBtn {
     border: none;
-    background-color: tomato;
+    background-color: #1E90F7;
     color: white;
     font: 300 1vmax "Roboto";
     width: 100%;
@@ -67,7 +67,7 @@
     margin: 2vmax;
 }
 .shippingBtn:hover {
-    background-color: rgb(179, 66, 46);
+    background-color: rgba(25, 90, 200, 1);
 }
 @media screen and (max-width: 600px) {
     .shippingBox {

@@ -5,7 +5,7 @@
     grid-template-columns: 6fr 3fr;
 }
 .confirmOrderPage > div:last-child {
-    border-left: 1px solid rgba(0, 0, 0, 0.247);
+    border-left: 1px solid rgba(25, 90, 200, 17);
 }
 .confirmShippingArea {
     padding: 5vmax;
@@ -64,7 +64,7 @@
 .orderSummary > p {
     text-align: center;
     font: 400 1.8vmax "Roboto";
-    border-bottom: 1px solid rgba(0, 0, 0, 0.267);
+    border-bottom: 1px solid rgba(25, 90, 200, 1);
     padding: 1vmax;
     width: 100%;
     margin: auto;
@@ -83,11 +83,11 @@
     display: flex;
     font: 300 1vmax "Roboto";
     justify-content: space-between;
-    border-top: 1px solid rgba(0, 0, 0, 0.363);
+    border-top: 1px solid rgba(25, 90, 200, 1);
     padding: 2vmax 0;
 }
 .orderSummary > button {
-    background-color: tomato;
+    background-color: #1E90F7;
     color: white;
     width: 100%;
     padding: 1vmax;
@@ -98,7 +98,7 @@
     font: 400 1vmax "Roboto";
 }
 .orderSummary > button:hover {
-    background-color: rgb(192, 71, 50);
+    background-color: rgba(25, 90, 200, 1);
 }
 @media screen and (max-width: 600px) {
     .confirmOrderPage {

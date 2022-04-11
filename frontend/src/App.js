@@ -38,6 +38,11 @@ import OrderList from './components/Admin/OrderList';
 import ProcessOrder from './components/Admin/ProcessOrder';
 import UsersList from './components/Admin/UsersList';
 import UpdateUser from './components/Admin/UpdateUser';
+import ProductReviews from './components/Admin/ProductReviews';
+import NotFound from './components/layout/Not Found/NotFound';
+import About from './components/layout/About/About';
+import Contact from './components/layout/Contact/Contact';
+
 
 function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
@@ -57,6 +62,7 @@ function App() {
     store.dispatch(loadUser());
     getStripeApiKey();
   }, []);
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
   
   return (
     <Router>
@@ -69,6 +75,8 @@ function App() {
           <Route path="/products/:keyword" element={<Products />} />
           
           <Route exact path="/search" element={<Search />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
           <Route exact path="/login" element={<LoginSignUp />} />
           <Route exact path="/account" element={<ProtectedRoute Component={Profile} />} />
           <Route exact path="/me/update" element={<ProtectedRoute Component={UpdateProfile} />} />
@@ -96,6 +104,8 @@ function App() {
           <Route exact path="/admin/order/:id" isAdmin={true} element={<ProtectedRoute Component={ProcessOrder} />} />
           <Route exact path="/admin/users"  isAdmin={true} element={<ProtectedRoute Component={UsersList} />} />
           <Route exact path="/admin/user/:id" isAdmin={true} element={<ProtectedRoute Component={UpdateUser} />} />
+          <Route exact path="/admin/reviews" isAdmin={true} element={<ProtectedRoute Component={ProductReviews} />} />
+          <Route path="*" element={window.location.pathname === '/process/payment' ? null : <NotFound />} />
         </Routes>
       <Footer />
     </Router>

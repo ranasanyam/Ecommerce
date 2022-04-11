@@ -4,12 +4,13 @@ import logo from '../../../images/logo.png';
 
 
 const options = {
-    burgerColorHover:"#eb4034",
+    burgerColor: "#1E90F7",
+    burgerColorHover:"rgb(25, 80, 180)",
     logo,
     logoWidth:"20vmax",
     navColor1:"white",
     logoHoverSize:"10px",
-    logoHoverColor:"#eb4034",
+    logoHoverColor:"#1E90F7",
     
     link1Text:"Home",
     link2Text:"Products",
@@ -28,16 +29,16 @@ const options = {
     nav3justifyContent: 'flex-start',
     nav4justifyContent: 'flex-start',
 
-    link1ColorHover: '#eb4034',
+    link1ColorHover: '#1E90F7',
     link1Margin: '1vmax',
 
     profileIconUrl: '/login',
     profileIconColor: 'rgba(35, 35, 35, 0.8)',
     searchIconColor: 'rgba(35, 35, 35, 0.8)',
     cartIconColor: 'rgba(35, 35, 35, 0.8)',
-    profileIconColorHover: '#eb4034',
-    searchIconColorHover: '#eb4034',
-    cartIconColorHover: '#eb4034',
+    profileIconColorHover: '#1E90F7',
+    searchIconColorHover: '#1E90F7',
+    cartIconColorHover: '#1E90F7',
     cartIconMargin: '1vmax'
 }
 const Header = () => {

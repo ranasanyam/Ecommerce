@@ -1,21 +1,25 @@
 footer {
-    margin-top: 10vmax;
+    margin-top: 5vmax;
     padding: 2vmax;
     background-color: rgb(34, 33, 33);
     color: white;
     display: flex;
     align-items: center;
 }
+
 .leftFooter {
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 2vmax;
+    padding-top: 1vmax;
 }
 
 .leftFooter > h4 {
     font-family: "Roboto";
     font-size: 1vmax;
+    margin-bottom: 2vmax;
 }
 
 .leftFooter > p {
@@ -35,17 +39,24 @@ footer {
 .midFooter > h1 {
     font-size: 4vmax;
     font-family: "Roboto";
-    color: #eb4034;
+    color: #1E90F7;
 }
 .midFooter > p {
     max-width: 60%;
     margin: 1vmax auto;
+    letter-spacing: 0.8px;
+    font-size: 1.2rem;
+}
+.midFooter > p > span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
 }
 .rightFooter {
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    letter-spacing: 1px;
 }
 .rightFooter > h4 {
     font-family: "Roboto";
@@ -62,5 +73,5 @@ footer {
     margin: 0.5vmax;
 }
 .rightFooter > a:hover {
-    color: #eb4034;
+    color: #1E90F7;
 }

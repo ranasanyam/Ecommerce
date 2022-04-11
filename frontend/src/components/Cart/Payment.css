@@ -12,7 +12,7 @@
 .paymentForm > p {
     font: 400 2vmax "Roboto";
     color: rgba(0, 0, 0, 0.753);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+    border-bottom: 1px solid rgba(25, 90, 200, 1);
     padding: 1vmax 0;
     text-align: center;
     width: 50%;
@@ -36,11 +36,11 @@
     position: absolute;
     transform: translateX(1vmax);
     font-size: 1.6vmax;
-    color: rgba(0, 0, 0, 0.623);
+    color: #1E90F7;
 }
 .paymentFormBtn {
     border: none;
-    background-color: tomato;
+    background-color: #1E90F7;
     color: white;
     font: 300 0.9vmax "Roboto";
     width: 100%;
@@ -50,7 +50,7 @@
     outline: none;
 }
 .paymentFormBtn:hover {
-    background-color: rgb(179, 66, 46);
+    background-color: rgba(25, 90, 200, 1);
 }
 
 @media screen and (max-width: 600px) {

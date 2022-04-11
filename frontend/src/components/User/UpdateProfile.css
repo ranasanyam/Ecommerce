@@ -22,7 +22,7 @@
     color: rgba(0, 0, 0, 0.664);
     font: 400 1.3vmax "Roboto";
     padding: 1.3vmax;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.205);
+    border-bottom: 1px solid rgba(25, 90, 200, 1);
     width: 50%;
     margin: auto;
 }
@@ -55,7 +55,7 @@
     position: absolute;
     transform: translateX(1vmax);
     font-size: 1.6vmax;
-    color: rgba(0, 0, 0, 0.623);
+    color: #1E90F7;
 }
 #updateProfileImage > img {
     width: 3vmax;
@@ -84,7 +84,7 @@
 }
 .updateProfileBtn {
     border: none;
-    background-color: tomato;
+    background-color: #1E90F7;
     color: white;
     font: 300 0.9vmax "Roboto";
     width: 100%;
@@ -93,10 +93,10 @@
     transition: all 0.5s;
     border-radius: 4px;
     outline: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+    box-shadow: 0 2px 5px rgba(25, 90, 200, 1);
 }
 .updateProfileBtn:hover {
-    background-color: rgb(179, 66, 46);
+    background-color: rgba(25, 90, 200, 1);
 }
 @media screen and (max-width: 600px) {
     .updateProfileContainer {
